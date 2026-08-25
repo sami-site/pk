@@ -7,7 +7,7 @@
 <meta name="description" content="Sami Ullah — hands-on professional across agriculture, aquaculture, construction and computer operations. Based in Malaysia, open to opportunities worldwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesh[...]
 <style>
   :root{
     --bg:#12130F;
@@ -83,18 +83,18 @@
   /* ---------- hero ---------- */
   .hero{ position:relative; min-height:100svh; display:flex; align-items:center; overflow:hidden; padding-top:5rem; }
 
-  .hero-photo-bg{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 30%; z-index:0; opacity:0; transform:scale(1.12); animation:photoIn 2.2s cubic-bezier(.16,1,.3,1) forwards; }
+  .hero-photo-bg{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 30%; z-index:0; opacity:0; transform:scale(1.12); animation:photoIn 2.2s cubic-bezier(.[...]
   @keyframes photoIn{ to{ opacity:1; transform:scale(1); } }
   .hero-scrim{
     position:absolute; inset:0; z-index:1; pointer-events:none;
     background:
-      linear-gradient(100deg, rgba(13,14,10,.95) 0%, rgba(13,14,10,.86) 34%, rgba(13,14,10,.5) 58%, rgba(13,14,10,.16) 76%),
+      linear-gradient(180deg, rgba(13,14,10,.92) 0%, rgba(13,14,10,.75) 35%, rgba(13,14,10,.45) 65%, rgba(13,14,10,.15) 85%),
       linear-gradient(180deg, rgba(13,14,10,.1) 0%, rgba(13,14,10,.18) 55%, rgba(13,14,10,.88) 92%, var(--bg) 100%);
   }
-  .hero-caption{ position:absolute; right:clamp(1.25rem,4vw,2.5rem); bottom:clamp(1.5rem,4vw,2.2rem); z-index:2; display:flex; align-items:center; gap:.6rem; font-family:var(--mono); font-size:.76rem; color:var(--muted); }
+  .hero-caption{ position:absolute; right:clamp(1.25rem,4vw,2.5rem); bottom:clamp(1.5rem,4vw,2.2rem); z-index:2; display:flex; align-items:center; gap:.6rem; font-family:var(--mono); font-size:.76[...]
   .hero-caption .dot{ width:6px; height:6px; border-radius:50%; background:var(--clay); flex:none; }
   @media (max-width:720px){ .hero-photo-bg{ object-position:38% 26%; } .hero-scrim{ background:
-      linear-gradient(180deg, rgba(13,14,10,.5) 0%, rgba(13,14,10,.62) 38%, rgba(13,14,10,.95) 82%, var(--bg) 100%); } .hero-caption{ top:clamp(5.5rem,15vh,7rem); right:clamp(1.1rem,4vw,2rem); left:auto; } }
+      linear-gradient(180deg, rgba(13,14,10,.5) 0%, rgba(13,14,10,.62) 38%, rgba(13,14,10,.95) 82%, var(--bg) 100%); } .hero-caption{ top:clamp(5.5rem,15vh,7rem); right:clamp(1.1rem,4vw,2rem); lef[...]
 
   .hero-content{ position:relative; z-index:2; width:100%; }
   .hero-title{ font-family:var(--display); font-weight:900; letter-spacing:-.03em; line-height:.92; font-size:clamp(3.2rem,15vw,8.5rem); }
@@ -109,7 +109,7 @@
   @keyframes riseIn{ to{ opacity:1; transform:translateY(0); } }
   @keyframes shimmer{ to{ background-position:-280% 0; } }
 
-  .hero-role-row{ display:flex; align-items:center; gap:.7rem; margin-top:1.4rem; font-family:var(--mono); font-size:clamp(.95rem,2vw,1.15rem); color:var(--aqua); opacity:0; animation:fadeUp .8s ease forwards; animation-delay:.75s; }
+  .hero-role-row{ display:flex; align-items:center; gap:.7rem; margin-top:1.4rem; font-family:var(--mono); font-size:clamp(.95rem,2vw,1.15rem); color:var(--aqua); opacity:0; animation:fadeUp .8s [...]
   .hero-role-row .dot{ width:8px; height:8px; border-radius:50%; background:var(--aqua); animation:pulse 1.8s ease-in-out infinite; flex:none; }
   #roleText{ display:inline-block; transition:opacity .35s ease, transform .35s ease; }
   @keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:.35; } }
@@ -119,15 +119,15 @@
   .hero-sub{ margin-top:.6rem; font-size:.92rem; color:var(--muted); opacity:0; animation:fadeUp .8s ease forwards; animation-delay:.95s; }
   .hero-ctas{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:2.2rem; opacity:0; animation:fadeUp .8s ease forwards; animation-delay:1.05s; }
 
-  .btn{ font-family:var(--mono); font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; padding:.9rem 1.6rem; border-radius:100px; transition:transform .2s ease, background .2s ease, border-color .2s ease; cursor:pointer; border:none; }
+  .btn{ font-family:var(--mono); font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; padding:.9rem 1.6rem; border-radius:100px; transition:transform .2s ease, background .2s ease, b[...]
   .btn-primary{ background:var(--clay); color:#171307; }
   .btn-primary:hover{ transform:translateY(-2px); background:#efa855; }
   .btn-ghost{ border:1px solid var(--line); color:var(--ink); }
   .btn-ghost:hover{ border-color:var(--aqua); color:var(--aqua); transform:translateY(-2px); }
 
-  .scroll-cue{ position:absolute; bottom:2.2rem; left:clamp(1.25rem,4vw,2.5rem); z-index:2; display:flex; align-items:center; gap:.6rem; font-family:var(--mono); font-size:.72rem; color:var(--muted); animation:fadeUp .8s ease forwards; animation-delay:1.15s; }
+  .scroll-cue{ position:absolute; bottom:2.2rem; left:clamp(1.25rem,4vw,2.5rem); z-index:2; display:flex; align-items:center; gap:.6rem; font-family:var(--mono); font-size:.72rem; color:var(--mut[...]
   .scroll-cue .stick{ width:1px; height:34px; background:linear-gradient(var(--clay), transparent); animation:stick 1.8s ease-in-out infinite; }
-  @keyframes stick{ 0%{ transform:scaleY(0); transform-origin:top;} 50%{ transform:scaleY(1); transform-origin:top;} 51%{ transform-origin:bottom;} 100%{ transform:scaleY(0); transform-origin:bottom;} }
+  @keyframes stick{ 0%{ transform:scaleY(0); transform-origin:top;} 50%{ transform:scaleY(1); transform-origin:top;} 51%{ transform-origin:bottom;} 100%{ transform:scaleY(0); transform-origin:bot[...]
 
   /* ---------- stats ---------- */
   .stats{ border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
@@ -146,7 +146,7 @@
   /* ---------- timeline ---------- */
   .timeline{ position:relative; padding-left:clamp(1.4rem,3vw,2.2rem); border-left:1px solid var(--line); display:flex; flex-direction:column; gap:2.6rem; }
   .tl-item{ position:relative; }
-  .tl-item::before{ content:''; position:absolute; left:calc(-1 * clamp(1.4rem,3vw,2.2rem) - 5px); top:.4rem; width:9px; height:9px; border-radius:50%; background:var(--clay); box-shadow:0 0 0 4px var(--bg); }
+  .tl-item::before{ content:''; position:absolute; left:calc(-1 * clamp(1.4rem,3vw,2.2rem) - 5px); top:.4rem; width:9px; height:9px; border-radius:50%; background:var(--clay); box-shadow:0 0 0 4p[...]
   .tl-head{ display:flex; flex-wrap:wrap; align-items:baseline; gap:.6rem 1rem; margin-bottom:.5rem; }
   .tl-role{ font-family:var(--display); font-weight:700; font-size:clamp(1.1rem,2vw,1.35rem); }
   .tl-dates{ font-family:var(--mono); font-size:.78rem; color:var(--aqua); text-transform:uppercase; letter-spacing:.06em; }
@@ -160,7 +160,7 @@
   .skill-groups{ display:grid; grid-template-columns:repeat(2,1fr); gap:2.4rem; }
   .skill-group h3{ font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em; font-size:.8rem; color:var(--clay); margin-bottom:1rem; }
   .tag-row{ display:flex; flex-wrap:wrap; gap:.6rem; }
-  .tag{ border:1px solid var(--card-border); background:var(--card); padding:.5rem 1rem; border-radius:100px; font-size:.88rem; color:var(--ink-dim); transition:border-color .2s ease, color .2s ease, transform .2s ease; }
+  .tag{ border:1px solid var(--card-border); background:var(--card); padding:.5rem 1rem; border-radius:100px; font-size:.88rem; color:var(--ink-dim); transition:border-color .2s ease, color .2s e[...]
   .tag:hover{ border-color:var(--aqua); color:var(--ink); transform:translateY(-2px); }
   @media (max-width:720px){ .skill-groups{ grid-template-columns:1fr; } }
 
@@ -199,7 +199,7 @@
   .contact-title{ font-family:var(--display); font-weight:800; font-size:clamp(2.2rem,5vw,3.4rem); letter-spacing:-.01em; margin-bottom:1.2rem; }
   .contact-text{ color:var(--ink-dim); max-width:42ch; margin-bottom:2rem; }
   .contact-links{ display:flex; flex-direction:column; gap:1rem; }
-  .contact-link{ display:flex; align-items:center; gap:.9rem; border:1px solid var(--card-border); background:var(--card); padding:1rem 1.2rem; border-radius:12px; transition:border-color .2s ease, transform .2s ease; }
+  .contact-link{ display:flex; align-items:center; gap:.9rem; border:1px solid var(--card-border); background:var(--card); padding:1rem 1.2rem; border-radius:12px; transition:border-color .2s eas[...]
   .contact-link:hover{ border-color:var(--clay); transform:translateX(4px); }
   .contact-link svg{ width:20px; height:20px; stroke:var(--aqua); fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex:none; }
   .contact-link .label{ font-family:var(--mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); display:block; }
@@ -270,7 +270,7 @@
       <div class="eyebrow">Objective</div>
       <h2 class="section-title" style="margin-bottom:0;">Honest work, wherever it takes me.</h2>
     </div>
-    <p class="reveal-text" id="aboutText">I'm Sami Ullah, a hardworking and dedicated professional from Buner, Pakistan. My experience spans agriculture, aquaculture, construction, and computer operations. I've worked across diverse environments — from managing crops and fish farms in Pakistan to contributing to plantations in Malaysia. I'm reliable, eager to learn, and ready to give my best effort in any role. Beyond my hands-on field experience, I hold qualifications in information technology and have worked as a computer operator and accountant. I speak four languages and am comfortable working both independently and as part of a team. Based in Malaysia, I'm open to relocating for the right opportunity and am passionate about continuous growth and honest, dependable work.</p>
+    <p class="reveal-text" id="aboutText">I'm Sami Ullah, a hardworking and dedicated professional from Buner, Pakistan. My experience spans agriculture, aquaculture, construction, and computer operat[...]
   </div>
 </section>
 
@@ -311,7 +311,7 @@
       </div>
 
       <div class="tl-item reveal-item">
-        <div class="tl-head"><span class="tl-role">Research Associate <span style="color:var(--muted); font-weight:400; font-size:.75em;">(Part Time)</span></span><span class="tl-dates">Jun 2022 – Jul 2022</span></div>
+        <div class="tl-head"><span class="tl-role">Research Associate <span style="color:var(--muted); font-weight:400; font-size:.75em;">(Part Time)</span></span><span class="tl-dates">Jun 2022 – J[...]
         <div class="tl-org">Agriculture Extension Department <span>· Buner, Pakistan</span></div>
         <ul>
           <li>Helped farmers adopt better, more sustainable methods</li>
@@ -340,7 +340,7 @@
       </div>
 
       <div class="tl-item reveal-item">
-        <div class="tl-head"><span class="tl-role">General Agriculture Worker <span style="color:var(--muted); font-weight:400; font-size:.75em;">(Self-Employed)</span></span><span class="tl-dates">Mar 2014 – Feb 2016</span></div>
+        <div class="tl-head"><span class="tl-role">General Agriculture Worker <span style="color:var(--muted); font-weight:400; font-size:.75em;">(Self-Employed)</span></span><span class="tl-dates">Ma[...]
         <div class="tl-org">Buner, Pakistan</div>
         <ul>
           <li>Prepared, irrigated and maintained soil for planting seasons</li>
@@ -405,7 +405,7 @@
     <div class="lang-list">
       <div class="lang-row reveal-item"><span class="lang-name">Pashto</span><div class="lang-bar"><div class="lang-fill" data-level="100"></div></div><span class="lang-level">Native</span></div>
       <div class="lang-row reveal-item"><span class="lang-name">Urdu</span><div class="lang-bar"><div class="lang-fill" data-level="100"></div></div><span class="lang-level">Native</span></div>
-      <div class="lang-row reveal-item"><span class="lang-name">English</span><div class="lang-bar"><div class="lang-fill" data-level="70"></div></div><span class="lang-level">Intermediate</span></div>
+      <div class="lang-row reveal-item"><span class="lang-name">English</span><div class="lang-bar"><div class="lang-fill" data-level="70"></div></div><span class="lang-level">Intermediate</span>[...]
       <div class="lang-row reveal-item"><span class="lang-name">Malay</span><div class="lang-bar"><div class="lang-fill" data-level="50"></div></div><span class="lang-level">Working</span></div>
     </div>
   </div>
@@ -458,7 +458,7 @@
         <h4>Fast Learner</h4>
       </div>
       <div class="strength-card reveal-item">
-        <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.2"/><circle cx="16.5" cy="10.5" r="2.6"/><path d="M3.5 20c.5-3.5 3-5.5 5.5-5.5s5 2 5.5 5.5"/><path d="M14.8 15.3c2 .2 3.8 2 4.3 4.7"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.2"/><circle cx="16.5" cy="10.5" r="2.6"/><path d="M3.5 20c.5-3.5 3-5.5 5.5-5.5s5 2 5.5 5.5"/><path d="M14.8 15.3c2 .2 3.8 2 4.3 4.7"/><[...]
         <h4>Team Player</h4>
       </div>
       <div class="strength-card reveal-item">
